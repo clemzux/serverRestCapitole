@@ -7,17 +7,20 @@
 
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 
+		<class>capitole.classes.CDate</class>
+		<class>capitole.classes.CReservation</class>
+
 		<properties>
 
 			<!-- Les paramètres de connexions -->
 			<property name="javax.persistence.target-database" value="PostgreSQL"/>
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/reservationschattanga"/>
-			<property name="javax.persistence.jdbc.user" value="chattanga"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/reservationscapitole"/>
+			<property name="javax.persistence.jdbc.user" value="capitole"/>
 			<property name="javax.persistence.jdbc.password" value="whatthefuck"/>
 			<property name="eclipselink.ddl-generation.output-mode" value="both"/>
-			<property name="eclipselink.ddl-generation" value="create-tables"/>
-			<!--<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>-->
+			<!--<property name="eclipselink.ddl-generation" value="create-tables"/>-->
+			<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
 		</properties>
 
 	</persistence-unit>
